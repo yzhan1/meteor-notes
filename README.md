@@ -1,3 +1,3 @@
-# meteor-boilerplate
+# meteor-notes
 
-Basic login and logout component for meteor applications.
+A real-time syncing note taking app implemented with Meteor.js and React.js.
