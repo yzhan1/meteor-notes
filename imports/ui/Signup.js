@@ -38,7 +38,7 @@ export class Signup extends React.Component {
     return (
       <div className="boxed-view">
         <div className="boxed-view__box">
-          <h1><strong>Join Notes</strong></h1>
+          <h1><strong>Join MeteNote</strong></h1>
 
           {this.state.error ? <p style={styles}>{this.state.error}</p> : undefined}
 
