@@ -5,8 +5,9 @@
 
 .header__content {
   display: flex;
+  height: $header-height;
   justify-content: space-between;
-  max-width: $site-max-width * 2.28;
+  max-width: $site-max-width * 1.1;
   margin: 0 auto;
   padding: $space;
 }
