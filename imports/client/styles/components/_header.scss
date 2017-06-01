@@ -1,13 +1,14 @@
 .header {
-  background: $header-bg;
+  background-image: linear-gradient(to right, #57a2ff 0%, #938aea 110%);
   color: $header-color;
+  box-shadow: 0 6px 15px rgba(36,37,38,0.08);
 }
 
 .header__content {
   display: flex;
   height: $header-height;
   justify-content: space-between;
-  max-width: $site-max-width * 1.1;
+  max-width: $site-max-width;
   margin: 0 auto;
   padding: $space;
 }

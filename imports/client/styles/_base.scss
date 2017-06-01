@@ -32,11 +32,12 @@ a {
   text-decoration: none;
 }
 
-input[type=text], input[type=email], input[type=password] {
+input[type=text], input[type=email], input[type=password], textarea {
   border: 0px solid #bdc3c7;
   border-radius: 6px;
-  color: $asphalt;
+  color: $body-default-color;
   font-size: $base-font-size;
+  font-family: $body-default-font-family;
   margin-bottom: $space;
   padding: $input-spacing;
 }

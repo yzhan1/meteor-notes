@@ -1,5 +1,36 @@
 .editor {
   background-color: white;
-  border: 1px solid $grey;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: $large-space;
   width: 100%;
+  box-shadow: 0 6px 15px rgba(36,37,38,0.08);
+}
+
+.editor__title {
+  border: none;
+  border-bottom: 2px solid $light-grey;
+  font-size: $large-font-size;
+  font-weight: bold;
+  margin-bottom: $large-space;
+  outline: none;
+  padding: $input-spacing;
+}
+
+.editor__body {
+  flex-grow: 1;
+  font-weight: 300;
+  font-size: 1.4rem;
+  margin-bottom: $large-space;
+  outline: none;
+  padding: $input-spacing;
+  resize: none;
+}
+
+.editor__message {
+  text-align: center;
+  margin: $large-space * 2;
+  font-style: italic;
 }

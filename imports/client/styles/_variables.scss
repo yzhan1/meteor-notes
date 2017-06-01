@@ -8,13 +8,19 @@ $blue: #3498DB;
 $dark-red: #C0392B;
 $red: #E74C3C;
 
+// Body
+$body-background-color: $grey;
+$body-default-color: $asphalt;
+$body-default-font-family: Lato;
+
 // Spacing
 $space: 1.4rem;
-$site-max-width: 100rem;
+$large-space: 2.8rem;
+$site-max-width: 115rem;
 
 // Font sizes
 $base-font-size: 1.4rem;
-$large-font-size: 1.8rem;
+$large-font-size: 2.2rem;
 
 // Form inputs
 $input-border: $grey;
@@ -38,9 +44,8 @@ $header-color: white;
 $header-height: 6rem;
 
 // item
-$item-bg: $light-grey;
-$item-border: darken($item-bg, 8%);
-$item-text-color: $dark-grey;
+$item-border-width: 4px;
+
 
 // Page content
 $page-content-sidebar-width: 30rem;
