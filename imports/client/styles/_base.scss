@@ -39,5 +39,6 @@ input[type=text], input[type=email], input[type=password], textarea {
   font-size: $base-font-size;
   font-family: $body-default-font-family;
   margin-bottom: $space;
+  outline: none;
   padding: $input-spacing;
 }

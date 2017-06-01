@@ -8,7 +8,10 @@ export const PrivateHeader = (props) => {
     <div className="header">
       <div className="header__content">
         <h1 className="header__title">{props.title}</h1>
-        <button className="button button--on-header" onClick={() => props.handleLogout()}>Logout</button>
+        <div>
+          <a className="button button--link" target="_blank" href="https://github.com/zhanym0981/meteor-notes">GitHub</a>
+          <button className="button button--on-header" onClick={() => props.handleLogout()}>Logout</button>
+        </div>  
       </div>
     </div>
   );
