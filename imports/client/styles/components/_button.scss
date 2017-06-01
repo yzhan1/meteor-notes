@@ -7,7 +7,8 @@
   font-size: $base-font-size;
   line-height: 1.471;
   margin-bottom: $space;
-  padding: $input-spacing;
+  //padding: $input-spacing;
+  padding: 10px 19px;
   text-transform: uppercase;
 }
 
@@ -45,6 +46,9 @@
   font-size: $base-font-size;
   line-height: 1;
   margin-bottom: 0;
-  padding: $input-spacing;
   text-transform: uppercase;
+}
+
+.button--delete {
+  background-color: $red;
 }
