@@ -34,7 +34,7 @@ export class Login extends React.Component {
     return (
       <div className="boxed-view">
         <div className="boxed-view__box">
-          <h1><strong>Login to MeteNote</strong></h1>
+          <h1><strong>Login to MeteorNote</strong></h1>
 
           {this.state.error ? <p style={styles}>{this.state.error}</p> : undefined}
 

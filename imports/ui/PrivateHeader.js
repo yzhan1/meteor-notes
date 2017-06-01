@@ -1,6 +1,7 @@
 import React from 'react';
 import {Accounts} from 'meteor/accounts-base';
 import {createContainer} from 'meteor/react-meteor-data';
+import {Link} from 'react-router';
 
 export const PrivateHeader = (props) => {
   return (
@@ -23,3 +24,5 @@ export default createContainer(() => {
     handleLogout: () => Accounts.logout()
   };
 }, PrivateHeader);
+
+//<a className="button button--on-header" target="_blank" href="https://github.com/zhanym0981/meteor-notes">GitHub</a>
