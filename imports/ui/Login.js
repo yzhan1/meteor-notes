@@ -3,6 +3,9 @@ import {Link} from 'react-router';
 import {Meteor} from 'meteor/meteor';
 import {createContainer} from 'meteor/react-meteor-data';
 
+import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import FlatButton from 'material-ui/FlatButton';
+
 export class Login extends React.Component {
 
   constructor(props) {
@@ -30,7 +33,7 @@ export class Login extends React.Component {
     return (
       <div className="boxed-view">
         <div className="boxed-view__box">
-          <h1>Login</h1>
+          <h1>Login to YNotes</h1>
 
           {this.state.error ? <p>{this.state.error}</p> : undefined}
 

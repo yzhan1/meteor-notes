@@ -1,10 +1,11 @@
 .button {
   background-color: $button-bg;
   border: none;
+  border-radius: 6px;
   color: $button-color;
   cursor: pointer;
   font-size: $base-font-size;
-  line-height: 1.2;
+  line-height: 1.471;
   margin-bottom: $space;
   padding: $input-spacing;
   text-transform: uppercase;
@@ -35,4 +36,15 @@
   padding: 0;
   text-decoration: underline;
   text-transform: none;
+}
+
+.button--on-header {
+  background-color: $blue;
+  color: $button-color;
+  cursor: pointer;
+  font-size: $base-font-size;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: $input-spacing;
+  text-transform: uppercase;
 }

@@ -27,11 +27,14 @@ p {
 }
 
 a {
-  color: black;
+  color: #bfc9ca;
+  text-decoration: none;
 }
 
 input[type=text], input[type=email], input[type=password] {
-  border: 1px solid $input-border;
+  border: 0px solid #bdc3c7;
+  border-radius: 6px;
+  color: $asphalt;
   font-size: $base-font-size;
   margin-bottom: $space;
   padding: $input-spacing;
