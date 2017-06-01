@@ -3,6 +3,10 @@ import {Link} from 'react-router';
 import {Accounts} from 'meteor/accounts-base';
 import {createContainer} from 'meteor/react-meteor-data';
 
+var styles = {
+  color: '#C0392B'
+};
+
 export class Signup extends React.Component {
   
   constructor(props) {
@@ -34,9 +38,9 @@ export class Signup extends React.Component {
     return (
       <div className="boxed-view">
         <div className="boxed-view__box">
-          <h1>Join YNotes</h1>
+          <h1><strong>Join Notes</strong></h1>
 
-          {this.state.error ? <p>{this.state.error}</p> : undefined}
+          {this.state.error ? <p style={styles}>{this.state.error}</p> : undefined}
 
           <form className="boxed-view__form" onSubmit={this.onSubmit.bind(this)} noValidate>
             <input type="email" ref="email" name="email" placeholder="Email"/>
@@ -44,7 +48,7 @@ export class Signup extends React.Component {
             <button className="button">Create Account</button>
           </form>
 
-          <Link to="/">Already have an account?</Link>
+          <Link to="/">Login</Link>
         </div>
       </div>
     );

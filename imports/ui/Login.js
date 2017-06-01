@@ -6,6 +6,10 @@ import {createContainer} from 'meteor/react-meteor-data';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 
+var styles = {
+  color: '#C0392B'
+};
+
 export class Login extends React.Component {
 
   constructor(props) {
@@ -22,7 +26,7 @@ export class Login extends React.Component {
     
     this.props.loginWithPassword({email}, password, (err) => {
       if(err){
-        this.setState({error: 'Unable to login. Please check email and password.'});
+        this.setState({error: 'Invalid email and password combination.'});
       }else{
         this.setState({error: ''});
       }
@@ -33,9 +37,9 @@ export class Login extends React.Component {
     return (
       <div className="boxed-view">
         <div className="boxed-view__box">
-          <h1>Login to YNotes</h1>
+          <h1><strong>Login to Notes</strong></h1>
 
-          {this.state.error ? <p>{this.state.error}</p> : undefined}
+          {this.state.error ? <p style={styles}>{this.state.error}</p> : undefined}
 
           <form className="boxed-view__form" onSubmit={this.onSubmit.bind(this)} noValidate>
             <input type="email" ref="email" name="email" placeholder="Email"/>
@@ -43,7 +47,7 @@ export class Login extends React.Component {
             <button className="button">Login</button>
           </form>
 
-          <Link to="/signup">Don't have an account?</Link>
+          <Link to="/signup">Create account</Link>
         </div>
       </div>
     );
