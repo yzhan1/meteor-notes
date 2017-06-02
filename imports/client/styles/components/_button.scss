@@ -1,7 +1,7 @@
 .button {
   background-color: $button-bg;
   border: none;
-  border-radius: 8px;
+  border-radius: 50px;
   color: $button-color;
   cursor: pointer;
   font-size: $base-font-size;
@@ -55,4 +55,7 @@
 
 .button--delete {
   background-color: #f8645c;
+  // background-color: transparent;
+  // border: 2px solid #f8645c;
+  // color: #f8645c;
 }
