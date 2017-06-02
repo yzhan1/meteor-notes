@@ -5,6 +5,7 @@
 }
 
 .header__content {
+  //align-items: center;
   display: flex;
   height: $header-height;
   justify-content: space-between;
@@ -15,10 +16,38 @@
 
 .header__title {
   margin: 0;
-  font-weight: 700;
+  font-weight: 450;
+  padding-left: 10px;
+
+  @include desktop {
+    padding-left: 0;
+    font-weight: 700;
+  }
 }
 
 .header__right {
   display: flex;
-  
+}
+
+.header__github-link {
+  display: none;
+
+  @include desktop {
+    display: inline-block;
+  }
+}
+
+.header__left {
+  display: flex;
+}
+
+.header__nav-toggle {
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-top: 5.7px;
+
+  @include desktop {
+    display: none;
+  }
 }

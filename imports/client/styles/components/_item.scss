@@ -2,10 +2,14 @@
 .item-list {
   background-color: white;
   border: none;
-  border-radius: 12px;
   width: 100%;
+  -webkit-overflow-scrolling: touch;
   overflow-y: scroll;
   box-shadow: 0 6px 15px rgba(36,37,38,0.08);
+
+  @include desktop {
+    border-radius: 12px;
+  }
 }
 
 .item-list__header {

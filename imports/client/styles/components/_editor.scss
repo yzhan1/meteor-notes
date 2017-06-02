@@ -1,12 +1,17 @@
 .editor {
   background-color: white;
   border: none;
-  border-radius: 12px;
   display: flex;
   flex-direction: column;
-  padding: $large-space;
+  padding: $space;
   width: 100%;
+  -webkit-overflow-scrolling: touch;
   box-shadow: 0 6px 15px rgba(36,37,38,0.08);
+
+  @include desktop {
+    border-radius: 12px;
+    padding: $large-space;
+  }
 }
 
 .editor__title {
@@ -33,4 +38,24 @@
   text-align: center;
   margin: $large-space * 2;
   font-style: italic;
+  display: flex;
+  flex-direction: column;
+}
+
+.editor__image {
+  width: 80%;
+  margin-bottom: $large-space * 2;
+
+  @include desktop {
+    width: 45%;
+  }
+}
+
+.editor__button {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    display: block;
+  }
 }
